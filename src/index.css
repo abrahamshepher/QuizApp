@@ -48,7 +48,7 @@ header h1 {
   letter-spacing: 0.6rem;
   margin: 0;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #e781fb 40%, #8e76fa 60%);
+  background: linear-gradient(90deg, #c1b8c3 40%, #8c82b8 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -82,7 +82,7 @@ header h1 {
   max-width: 50rem;
   margin: auto;
   padding: 2rem;
-  background: linear-gradient(180deg, #3e2a60 0%, #321061 100%);
+  background: linear-gradient(180deg, #2a3a48 0%, #5d26a9 100%);
   border-radius: 8px;
   /* box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.6); */
   box-shadow: 1px 1px 8px 4px rgba(12, 5, 32, 0.6);
@@ -101,7 +101,7 @@ header h1 {
   width: 50%;
   height: 0.5rem;
   border-radius: 24px;
-  background: #9e5ef8;
+  background: #316a8d;
   margin: 0;
 }
 
@@ -312,7 +312,6 @@ header h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 3rem;
   color: #594276;
-
 }
 
 #summary-stats .text {
@@ -323,7 +322,6 @@ header h1 {
   margin-top: -0.7rem;
   margin-left: 0.2rem;
   letter-spacing: 0.1rem;
-  
 }
 
 @keyframes slide-in-from-bottom {

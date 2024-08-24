@@ -4,6 +4,7 @@ import Answers from "./Answers";
 import QUESTIONS from "./../questions";
 import Icon from "./Icon";
 import ProgressBar from "./ProgressBar";
+import OverallProgress from "./OverallProgress";
 
 const Question = ({
   index,
@@ -47,39 +48,11 @@ const Question = ({
   const percentage = (index / 20) * 100;
   return (
     <div id="question">
-      <div>
-        <h1>
-          Questions: {index + 1}/ {QUESTIONS.length}
-        </h1>
-        <div
-          style={{
-            height: "20px",
-            width: `${percentage}%`,
-            backgroundColor: "#e0e0df",
-            borderRadius: "50px",
-            margin: "20px 0",
-          }}
-        >
-          <div
-            style={{
-              height: "100%",
-              width: "100%",
-              backgroundColor: "#f44336",
-              borderRadius: "inherit",
-              textAlign: "right",
-              transition: "width 0.5s ease-in-out",
-            }}
-          >
-            <span
-              style={{
-                padding: "5px",
-                color: "white",
-                fontWeight: "bold",
-              }}
-            ></span>
-          </div>
-        </div>
-      </div>
+      <OverallProgress
+        length={QUESTIONS.length}
+        percentage={percentage}
+        count={index + 1}
+      />
       <div>
         <h2>{QUESTIONS[index].category}</h2>
         <Timer

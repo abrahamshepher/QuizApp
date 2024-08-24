@@ -1,4 +1,3 @@
-import React from "react";
 
 const ProgressBar = ({ correctAnswers, attempted, totalQuestions }) => {
   const scorePercentage =
